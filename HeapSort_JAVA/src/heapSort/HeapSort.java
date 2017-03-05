@@ -60,7 +60,7 @@ public class HeapSort {
 			int temp = readArray[i];
 			readArray[i] = readArray[large];
 			readArray[large] = temp;
-			maxHeapify(readArray, large);
+			readArray = maxHeapify(readArray, large);
 		}
 		
 		return readArray;
